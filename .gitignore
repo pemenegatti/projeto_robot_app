@@ -152,11 +152,7 @@ Thumbs.db
 # End of https://www.toptal.com/developers/gitignore/api/python
 
 # Blacklist
-results/**/*.csv
-results/**/*.html
-results/**/*.json
-results/**/*.png
-results/**/*.xml
+results/*
 .vscode/*
 debug.log
 .DS_Store
@@ -165,6 +161,7 @@ output.xml
 report.html
 appium-screenshot-*.png
 resources/app/*.apk
+libs/__pycache__
 
 # Whitelist
 !.gitkeep
