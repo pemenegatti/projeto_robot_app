@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.1 on darwin)" generated="20220810 01:31:54.157" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.1 on darwin)" generated="20220816 14:07:08.950" rpa="false" schemaversion="3">
 <suite id="s1" name="Projeto Robot App" source="/Users/pedromenegatti/Desktop/projeto_robot_app">
 <suite id="s1-s1" name="Tests" source="/Users/pedromenegatti/Desktop/projeto_robot_app/tests">
-<suite id="s1-s1-s1" name="Login" source="/Users/pedromenegatti/Desktop/projeto_robot_app/tests/login.robot">
+<suite id="s1-s1-s1" name="Radio" source="/Users/pedromenegatti/Desktop/projeto_robot_app/tests/radio.robot">
 <kw name="Spawn Appium Server" library="base" type="SETUP">
 <kw name="Start Process" library="Process">
 <arg>appium</arg>
@@ -10,24 +10,24 @@
 <arg>'4723'</arg>
 <arg>shell=true</arg>
 <doc>Starts a new process on background.</doc>
-<msg timestamp="20220810 01:31:54.949" level="INFO">Starting process:
+<msg timestamp="20220816 14:07:09.786" level="INFO">Starting process:
 appium -p '4723'</msg>
-<status status="PASS" starttime="20220810 01:31:54.948" endtime="20220810 01:31:55.024"/>
+<status status="PASS" starttime="20220816 14:07:09.784" endtime="20220816 14:07:09.963"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220810 01:32:00.031" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220810 01:31:55.027" endtime="20220810 01:32:00.034"/>
+<msg timestamp="20220816 14:07:15.015" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220816 14:07:09.987" endtime="20220816 14:07:15.018"/>
 </kw>
-<status status="PASS" starttime="20220810 01:31:54.943" endtime="20220810 01:32:00.035"/>
+<status status="PASS" starttime="20220816 14:07:09.783" endtime="20220816 14:07:15.018"/>
 </kw>
-<test id="s1-s1-s1-t1" name="Deve logar com sucesso" line="10">
+<test id="s1-s1-s1-t1" name="Deve selecionar a opção Paython" line="10">
 <kw name="Open Session" library="base" type="SETUP">
 <kw name="Set Appium Timeout" library="AppiumLibrary">
 <arg>5</arg>
 <doc>Sets the timeout in seconds used by various keywords.</doc>
-<status status="PASS" starttime="20220810 01:32:00.044" endtime="20220810 01:32:00.045"/>
+<status status="PASS" starttime="20220816 14:07:15.026" endtime="20220816 14:07:15.027"/>
 </kw>
 <kw name="Open Application" library="AppiumLibrary">
 <arg>http://localhost:4723/wd/hub</arg>
@@ -40,98 +40,99 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |</doc>
-<status status="PASS" starttime="20220810 01:32:00.045" endtime="20220810 01:32:15.090"/>
+<status status="PASS" starttime="20220816 14:07:15.028" endtime="20220816 14:07:29.289"/>
 </kw>
 <kw name="Get Started" library="helpers">
 <kw name="Wait Until Page Contains" library="AppiumLibrary">
 <arg>${START}</arg>
 <doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" starttime="20220810 01:32:15.091" endtime="20220810 01:32:19.643"/>
+<status status="PASS" starttime="20220816 14:07:29.290" endtime="20220816 14:07:33.641"/>
 </kw>
 <kw name="Click Text" library="AppiumLibrary">
 <arg>${START}</arg>
 <doc>Click text identified by ``text``.</doc>
-<status status="PASS" starttime="20220810 01:32:19.644" endtime="20220810 01:32:20.091"/>
+<status status="PASS" starttime="20220816 14:07:33.641" endtime="20220816 14:07:33.972"/>
 </kw>
-<status status="PASS" starttime="20220810 01:32:15.090" endtime="20220810 01:32:20.091"/>
+<status status="PASS" starttime="20220816 14:07:29.289" endtime="20220816 14:07:33.973"/>
 </kw>
-<status status="PASS" starttime="20220810 01:32:00.044" endtime="20220810 01:32:20.092"/>
+<status status="PASS" starttime="20220816 14:07:15.025" endtime="20220816 14:07:33.973"/>
 </kw>
-<kw name="Go To Login Form" library="helpers">
+<kw name="Go To Radion Buttons" library="helpers">
 <kw name="Open Nav" library="helpers">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${HAMBURGER}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220810 01:32:20.094" endtime="20220810 01:32:21.475"/>
+<status status="PASS" starttime="20220816 14:07:33.976" endtime="20220816 14:07:35.402"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${HAMBURGER}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220810 01:32:21.477" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]'.</msg>
-<status status="PASS" starttime="20220810 01:32:21.475" endtime="20220810 01:32:21.680"/>
+<msg timestamp="20220816 14:07:35.405" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]'.</msg>
+<status status="PASS" starttime="20220816 14:07:35.403" endtime="20220816 14:07:35.560"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${NAV_VIEW}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220810 01:32:21.681" endtime="20220810 01:32:22.742"/>
+<status status="PASS" starttime="20220816 14:07:35.561" endtime="20220816 14:07:36.738"/>
 </kw>
-<status status="PASS" starttime="20220810 01:32:20.093" endtime="20220810 01:32:22.743"/>
-</kw>
-<kw name="Click Text" library="AppiumLibrary">
-<arg>FORMS</arg>
-<doc>Click text identified by ``text``.</doc>
-<status status="PASS" starttime="20220810 01:32:22.743" endtime="20220810 01:32:23.012"/>
-</kw>
-<kw name="Wait Until Page Contains" library="AppiumLibrary">
-<arg>FORMS</arg>
-<doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" starttime="20220810 01:32:23.012" endtime="20220810 01:32:23.630"/>
+<status status="PASS" starttime="20220816 14:07:33.975" endtime="20220816 14:07:36.739"/>
 </kw>
 <kw name="Click Text" library="AppiumLibrary">
-<arg>LOGIN</arg>
+<arg>INPUTS</arg>
 <doc>Click text identified by ``text``.</doc>
-<status status="PASS" starttime="20220810 01:32:23.631" endtime="20220810 01:32:24.104"/>
+<status status="PASS" starttime="20220816 14:07:36.739" endtime="20220816 14:07:36.922"/>
 </kw>
 <kw name="Wait Until Page Contains" library="AppiumLibrary">
-<arg>Fala QA, vamos testar o login?</arg>
+<arg>INPUTS</arg>
 <doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" starttime="20220810 01:32:24.104" endtime="20220810 01:32:25.576"/>
+<status status="PASS" starttime="20220816 14:07:36.922" endtime="20220816 14:07:37.671"/>
 </kw>
-<status status="PASS" starttime="20220810 01:32:20.093" endtime="20220810 01:32:25.577"/>
+<kw name="Click Text" library="AppiumLibrary">
+<arg>BOTÕES DE RADIO</arg>
+<doc>Click text identified by ``text``.</doc>
+<status status="PASS" starttime="20220816 14:07:37.671" endtime="20220816 14:07:38.056"/>
 </kw>
-<kw name="Input Text" library="AppiumLibrary">
-<arg>id=io.qaninja.android.twp:id/etEmail</arg>
-<arg>eu@papito.io</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220810 01:32:25.580" level="INFO">Typing text 'eu@papito.io' into text field 'id=io.qaninja.android.twp:id/etEmail'</msg>
-<status status="PASS" starttime="20220810 01:32:25.577" endtime="20220810 01:32:26.432"/>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Escolha sua linguagem preferida</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20220816 14:07:38.057" endtime="20220816 14:07:39.471"/>
 </kw>
-<kw name="Input Text" library="AppiumLibrary">
-<arg>id=io.qaninja.android.twp:id/etPassword</arg>
-<arg>qaninja</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220810 01:32:26.435" level="INFO">Typing text 'qaninja' into text field 'id=io.qaninja.android.twp:id/etPassword'</msg>
-<status status="PASS" starttime="20220810 01:32:26.433" endtime="20220810 01:32:27.492"/>
+<status status="PASS" starttime="20220816 14:07:33.974" endtime="20220816 14:07:39.471"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${ELEMENT}</var>
+<arg>xpath=//android.widget.RadioButton[contains(@text, 'Python')]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220816 14:07:39.472" level="INFO">${ELEMENT} = xpath=//android.widget.RadioButton[contains(@text, 'Python')]</msg>
+<status status="PASS" starttime="20220816 14:07:39.471" endtime="20220816 14:07:39.481"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
-<arg>id=io.qaninja.android.twp:id/btnSubmit</arg>
+<arg>${ELEMENT}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220810 01:32:27.498" level="INFO">Clicking element 'id=io.qaninja.android.twp:id/btnSubmit'.</msg>
-<status status="PASS" starttime="20220810 01:32:27.494" endtime="20220810 01:32:28.091"/>
+<msg timestamp="20220816 14:07:39.484" level="INFO">Clicking element 'xpath=//android.widget.RadioButton[contains(@text, 'Python')]'.</msg>
+<status status="PASS" starttime="20220816 14:07:39.482" endtime="20220816 14:07:39.733"/>
 </kw>
-<kw name="Wait Until Page Contains" library="AppiumLibrary">
-<arg>Show! Suas credenciais são validas.</arg>
-<doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" starttime="20220810 01:32:28.092" endtime="20220810 01:32:28.748"/>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${ELEMENT}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20220816 14:07:39.734" endtime="20220816 14:07:40.669"/>
+</kw>
+<kw name="Element Attribute Should Match" library="AppiumLibrary">
+<arg>${ELEMENT}</arg>
+<arg>checked</arg>
+<arg>true</arg>
+<doc>Verify that an attribute of an element matches the expected criteria.</doc>
+<msg timestamp="20220816 14:07:40.780" level="INFO">Element 'xpath=//android.widget.RadioButton[contains(@text, 'Python')]' attribute 'checked' is 'true' </msg>
+<status status="PASS" starttime="20220816 14:07:40.669" endtime="20220816 14:07:40.781"/>
 </kw>
 <kw name="Close Session" library="base" type="TEARDOWN">
 <kw name="Close Application" library="AppiumLibrary">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" starttime="20220810 01:32:28.750" endtime="20220810 01:32:30.146"/>
+<status status="PASS" starttime="20220816 14:07:40.783" endtime="20220816 14:07:42.793"/>
 </kw>
-<status status="PASS" starttime="20220810 01:32:28.749" endtime="20220810 01:32:30.147"/>
+<status status="PASS" starttime="20220816 14:07:40.782" endtime="20220816 14:07:42.794"/>
 </kw>
-<status status="PASS" starttime="20220810 01:32:00.036" endtime="20220810 01:32:30.147"/>
+<status status="PASS" starttime="20220816 14:07:15.019" endtime="20220816 14:07:42.794"/>
 </test>
 <kw name="Close Appium Server" library="base" type="TEARDOWN">
 <kw name="Run Keyword And Ignore Error" library="BuiltIn">
@@ -139,30 +140,30 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
 <kw name="Close All Applications" library="AppiumLibrary">
 <doc>Closes all open applications.</doc>
-<status status="PASS" starttime="20220810 01:32:30.151" endtime="20220810 01:32:30.154"/>
+<status status="PASS" starttime="20220816 14:07:42.798" endtime="20220816 14:07:42.801"/>
 </kw>
-<status status="PASS" starttime="20220810 01:32:30.150" endtime="20220810 01:32:30.155"/>
+<status status="PASS" starttime="20220816 14:07:42.798" endtime="20220816 14:07:42.801"/>
 </kw>
 <kw name="Terminate All Processes" library="Process">
 <arg>kill=True</arg>
 <doc>Terminates all still running processes started by this library.</doc>
-<msg timestamp="20220810 01:32:30.156" level="INFO">Forcefully killing process.</msg>
-<msg timestamp="20220810 01:32:30.269" level="INFO">Process completed.</msg>
-<status status="PASS" starttime="20220810 01:32:30.155" endtime="20220810 01:32:30.279"/>
+<msg timestamp="20220816 14:07:42.802" level="INFO">Forcefully killing process.</msg>
+<msg timestamp="20220816 14:07:42.939" level="INFO">Process completed.</msg>
+<status status="PASS" starttime="20220816 14:07:42.801" endtime="20220816 14:07:42.949"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220810 01:32:35.281" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220810 01:32:30.280" endtime="20220810 01:32:35.284"/>
+<msg timestamp="20220816 14:07:47.951" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220816 14:07:42.950" endtime="20220816 14:07:47.953"/>
 </kw>
-<status status="PASS" starttime="20220810 01:32:30.149" endtime="20220810 01:32:35.285"/>
+<status status="PASS" starttime="20220816 14:07:42.797" endtime="20220816 14:07:47.953"/>
 </kw>
-<status status="PASS" starttime="20220810 01:31:54.297" endtime="20220810 01:32:35.289"/>
+<status status="PASS" starttime="20220816 14:07:09.063" endtime="20220816 14:07:47.954"/>
 </suite>
-<status status="PASS" starttime="20220810 01:31:54.227" endtime="20220810 01:32:35.299"/>
+<status status="PASS" starttime="20220816 14:07:09.050" endtime="20220816 14:07:47.958"/>
 </suite>
-<status status="PASS" starttime="20220810 01:31:54.172" endtime="20220810 01:32:35.309"/>
+<status status="PASS" starttime="20220816 14:07:08.979" endtime="20220816 14:07:47.962"/>
 </suite>
 <statistics>
 <total>
@@ -173,7 +174,7 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <suite>
 <stat pass="1" fail="0" skip="0" id="s1" name="Projeto Robot App">Projeto Robot App</stat>
 <stat pass="1" fail="0" skip="0" id="s1-s1" name="Tests">Projeto Robot App.Tests</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Login">Projeto Robot App.Tests.Login</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Radio">Projeto Robot App.Tests.Radio</stat>
 </suite>
 </statistics>
 <errors>

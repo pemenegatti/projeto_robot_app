@@ -152,7 +152,9 @@ Thumbs.db
 # End of https://www.toptal.com/developers/gitignore/api/python
 
 # Blacklist
-results/*
+results/*.png
+results/*.html
+results/*.xml
 .vscode/*
 debug.log
 .DS_Store
