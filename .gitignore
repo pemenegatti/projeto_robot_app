@@ -161,8 +161,8 @@ output.xml
 report.html
 appium-screenshot-*.png
 resources/app/*.apk
-libs/__pycache__
-
+libs/__pycache__/*
+backup/__pycache__/*
 # Whitelist
 !.gitkeep
 !*.sample
